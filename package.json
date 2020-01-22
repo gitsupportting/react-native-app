@@ -1,0 +1,44 @@
+{
+  "name": "snowyguide",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "bundle:android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/",
+    "bundle:ios": "react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios"
+  },
+  "dependencies": {
+    "react": "16.6.3",
+    "react-native": "0.58.6",
+    "react-native-add-calendar-event": "^2.3.0",
+    "react-native-firebase": "^5.3.1",
+    "react-native-gesture-handler": "^1.1.0",
+    "react-native-htmlview": "^0.13.0",
+    "react-native-indicator": "^0.7.0",
+    "react-native-maps": "^0.23.0",
+    "react-native-maps-directions": "^1.6.0",
+    "react-native-open-maps": "^0.3.3",
+    "react-native-phone-call": "^1.0.9",
+    "react-native-reanimated": "^1.0.0-alpha.12",
+    "react-native-snap-carousel": "^3.7.5",
+    "react-native-splash-screen": "^3.2.0",
+    "react-native-super-grid": "^3.0.3",
+    "react-native-swiper": "^1.5.14",
+    "react-native-tab-view": "^2.0.3",
+    "react-native-vector-icons": "^6.4.2",
+    "react-native-webview": "^5.5.0",
+    "react-native-webview-autoheight": "^1.0.6",
+    "react-navigation": "^3.5.1"
+  },
+  "devDependencies": {
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "24.5.0",
+    "jest": "24.5.0",
+    "metro-react-native-babel-preset": "0.53.1",
+    "react-test-renderer": "16.6.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
